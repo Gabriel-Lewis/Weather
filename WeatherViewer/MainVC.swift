@@ -9,6 +9,7 @@
 import UIKit
 
 class HomeVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
+	var table = true
 
 	@IBOutlet weak var TableView: UITableView!
 	override func viewDidLoad() {
