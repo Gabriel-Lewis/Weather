@@ -25,7 +25,7 @@
                                         <rect key="frame" x="0.0" y="92" width="600" height="74"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="OdW-S7-ysD" id="GcH-hy-g9z">
-                                            <rect key="frame" x="0.0" y="0.0" width="600" height="73.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="74"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
                                         <connections>
@@ -46,7 +46,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1185" y="429"/>
+            <point key="canvasLocation" x="1284" y="422"/>
         </scene>
         <!--DetailVC-->
         <scene sceneID="vI4-CR-nSg">
@@ -67,7 +67,7 @@
                                     <constraint firstAttribute="height" constant="161" id="YMA-90-G4j"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="50"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>

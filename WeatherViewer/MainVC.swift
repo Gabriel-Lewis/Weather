@@ -10,7 +10,8 @@ import UIKit
 
 class HomeVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
 	var table = true
-
+	
+	var cities = []
 	@IBOutlet weak var TableView: UITableView!
 	override func viewDidLoad() {
 		super.viewDidLoad()
