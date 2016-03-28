@@ -36,30 +36,33 @@ class HomeVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
 	
 	@IBAction func addButton(sender: AnyObject) {
 		//Create the AlertController
-	let actionSheetController: UIAlertController = UIAlertController(title: "ZipCode", message: "Please enter your zipcode", preferredStyle: .Alert)
+	let alertController: UIAlertController = UIAlertController(title: "ZipCode", message: "Please enter your zipcode", preferredStyle: .Alert)
 		
 	//Create and add the Cancel action
 	let cancelAction: UIAlertAction = UIAlertAction(title: "Cancel", style: .Cancel) { action -> Void in
-		
-		
+
 		}
-  actionSheetController.addAction(cancelAction)
-		//Create and an option action
-  let nextAction: UIAlertAction = UIAlertAction(title: "Next", style: .Default) { action -> Void in
+		
+	alertController.addAction(cancelAction)
+		
+	//Create and an option action
+	let nextAction: UIAlertAction = UIAlertAction(title: "Next", style: .Default) { action -> Void in
 	
 	
 		}
-  actionSheetController.addAction(nextAction)
-  //Add a text field
-  actionSheetController.addTextFieldWithConfigurationHandler { textField -> Void in
-	//TextField configuration
-	textField.textColor = UIColor.blueColor()
-	NSUserDefaults.standardUserDefaults().setObject(textField.text, forKey: "zipcode")
-	print(textField.text)
-		}
+	alertController.addAction(nextAction)
 		
-		//Present the AlertController
-		self.presentViewController(actionSheetController, animated: true, completion: nil)
+	//Add a text field
+	alertController.addTextFieldWithConfigurationHandler { textField -> Void in
+		
+		//TextField configuration
+		textField.textColor = UIColor.blueColor()
+		NSUserDefaults.standardUserDefaults().setObject(textField.text, forKey: "zipcode")
+		print(textField.text)
+			}
+		
+	//Present the AlertController
+	self.presentViewController(alertController, animated: true, completion: nil)
 	}
 	
 
